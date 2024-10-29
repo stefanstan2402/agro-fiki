@@ -1,4 +1,4 @@
-# Responsive Website for CareerForge 
+# Responsive Website for Agro  
 ### Landing page
 
 - Website for presenting details, using HTML, Sass and JavaScript.
