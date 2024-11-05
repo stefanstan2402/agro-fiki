@@ -88,3 +88,26 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+const track = document.querySelector('.carousel__track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.carousel__button--right');
+const prevButton = document.querySelector('.carousel__button--left');
+
+let currentIndex = 0;
+
+const moveToSlide = (index) => {
+  const amountToMove = -index * 100;
+  track.style.transform = `translateX(${amountToMove}%)`;
+  currentIndex = index;
+};
+
+nextButton.addEventListener('click', () => {
+  const newIndex = (currentIndex + 1) % slides.length;
+  moveToSlide(newIndex);
+});
+
+prevButton.addEventListener('click', () => {
+  const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+  moveToSlide(newIndex);
+});
