@@ -17,6 +17,9 @@
   --container-color: #FFF;
   --scroll-bar-color: hsl(var(--hue), 4%, 85%);
   --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+
+  --container-cDiscovery-color: rgb(191, 235, 191);
+  --container-pDiscovery-color: rgb(188, 193, 235);
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2rem;
@@ -99,6 +102,9 @@ body.dark-theme {
   --container-color: hsl(var(--hue), 8%, 16%);
   --scroll-bar-color: hsl(var(--hue), 4%, 32%);
   --scroll-thumb-color: hsl(var(--hue), 4%, 24%);
+
+  --container-cDiscovery-color: #0e8a0a;
+  --container-pDiscovery-color: rgb(23, 23, 161);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -113,6 +119,13 @@ body.dark-theme {
 
 .dark-theme .footer {
   background-color: var(--container-color);
+}
+
+.dark-theme .container-cDiscovery {
+  background-color: var(--container-cDiscovery-color);
+}
+.dark-theme .container-pDiscovery {
+  background-color: var(--container-pDiscovery-color);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -646,4 +659,24 @@ body.dark-theme {
 
 .carousel__button--right {
   right: 0;
+}
+
+.container-cDiscovery {
+  background-color: var(--container-cDiscovery-color);
+}
+.container-pDiscovery {
+  background-color: var(--container-pDiscovery-color);
+}
+
+.button_leaf {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding around text */
+  font-size: 16px; /* Font size */
+  text-decoration: none; /* Remove underline */
+  border-radius: 50px 25px 50px 25px; /* Asymmetrical radius for leaf shape */
+  transform: rotate(-5deg); /* Slight rotation for a leaf tilt */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover transition */
+  display: inline-block;
 }
