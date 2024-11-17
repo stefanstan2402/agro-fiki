@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Agro</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            src="assets/img/agro.jpg"
+            alt=""
+            class="nav__logo-img"
+            style="width: 10vw"
+          />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link active-link">Agro fiki</a>
+            </li>
+            <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <br /><br />
+
+    <section class="services section container" id="milestones">
+      <h2 class="section__title">Milestones</h2>
+      <div class="services__container grid">
+        <div class="services__data">
+          <h3 class="services__subtitle">
+            <a href="./index.html" class="nav__link active-link">Milestone 1</a>
+          </h3>
+        </div>
+
+        <div class="services__data">
+          <h3 class="services__subtitle">
+            <a href="./milestone2.html" class="nav__link active-link"
+              >Milestone 2</a
+            >
+          </h3>
+        </div>
+
+        <div class="services__data">
+          <h3 class="services__subtitle">
+            <a href="./milestone3.html" class="nav__link active-link"
+              >Milestone 3</a
+            >
+          </h3>
+        </div>
+
+        <div class="services__data">
+          <h3 class="services__subtitle">
+            <a href="./milestone4.html" class="nav__link active-link"
+              >Milestone 4</a
+            >
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section container" id="process">
+      <h2 class="section__title">
+        Refining User Insights: Interviews, Personas, and Enhanced Wireframes
+      </h2>
+      <div class="grid">
+        <div class="services__data">
+          <p class="services__description">
+            During this milestone, we were tasked to engage directly with our
+            main targeted customer segment to refine our product understanding
+            and user experience. Specifically, we conducted user research
+            through face-to-face interviews, developed a comprehensive user
+            persona, crafted user stories and use cases, and updated our
+            wireframes based on the insights we gathered. Below is a detailed
+            account of our process and findings.
+          </p>
+
+          <br />
+
+          <h3 class="services__subtitle">User Stories for Local Producers</h3>
+          <ul class="services__list" style="text-align: left !important">
+            <li>
+              <i class="bx bx-leaf"></i>
+              <strong>As a local producer,</strong> I want to easily list my
+              products on the app, so that buyers can find and purchase them
+              directly from me.
+              <ul class="services__sublist">
+                <li>
+                  ✅ I can upload product details (name, description, price,
+                  available quantity).
+                </li>
+                <li>✅ I can upload clear photos of my products.</li>
+                <li>✅ I can set delivery options and prices.</li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <i class="bx bx-package"></i>
+              <strong>As a local producer,</strong> I want to manage my
+              inventory and mark products as out of stock, so that buyers do not
+              purchase unavailable items.
+              <ul class="services__sublist">
+                <li>✅ I can update stock levels easily.</li>
+                <li>
+                  ✅ I can mark products as out of stock or re-stock them when
+                  new supplies are available.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <i class="bx bx-user-circle"></i>
+              <strong>As a local producer,</strong> I want to set up my profile
+              with contact information, location, and business details, so that
+              buyers can learn more about me and my products.
+              <ul class="services__sublist">
+                <li>✅ I can add my business name, location, and short bio.</li>
+                <li>
+                  ✅ I can upload a logo or business photo to personalize my
+                  profile.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <i class="bx bx-bell"></i>
+              <strong>As a local producer,</strong> I want to receive
+              notifications when I get new orders, so I can prepare and deliver
+              products on time.
+              <ul class="services__sublist">
+                <li>✅ I can send and receive direct messages with buyers.</li>
+                <li>✅ I can respond to buyer queries about my products.</li>
+              </ul>
+            </li>
+          </ul>
+          <br />
+          <hr />
+          <br />
+          <h3 class="services__subtitle">User Stories for Buyers</h3>
+          <ul class="services__list" style="text-align: left !important">
+            <li>
+              <i class="bx bx-search-alt"></i>
+              <strong>As a buyer,</strong> I want to search for local fresh
+              products by category (e.g., fruits, vegetables, dairy), so that I
+              can easily find what I need.
+              <ul class="services__sublist">
+                <li>
+                  ✅ I can filter products by type (e.g., fruit, meat, dairy,
+                  etc.).
+                </li>
+                <li>
+                  ✅ I can sort results by price, freshness, or distance from my
+                  location.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <i class="bx bx-user"></i>
+              <strong>As a buyer,</strong> I want to browse producer profiles to
+              learn more about the sellers and their products, so I can make
+              informed purchasing decisions.
+              <ul class="services__sublist">
+                <li>
+                  ✅ I can view a producer’s profile with their product
+                  offerings, contact information, and reviews from other buyers.
+                </li>
+                <li>
+                  ✅ I can see product descriptions and images for each item.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <i class="bx bx-credit-card"></i>
+              <strong>As a buyer,</strong> I want to make secure payments for my
+              orders, so I can complete purchases with peace of mind.
+              <ul class="services__sublist">
+                <li>
+                  ✅ I can pay using various methods (credit card, mobile
+                  wallet, etc.).
+                </li>
+                <li>
+                  ✅ I receive an order confirmation once the payment is
+                  successful.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <i class="bx bx-star"></i>
+              <strong>As a buyer,</strong> I want to leave reviews and ratings
+              for producers, so I can help other buyers make better choices.
+              <ul class="services__sublist">
+                <li>
+                  ✅ I can rate products and leave reviews based on my
+                  experience.
+                </li>
+                <li>
+                  ✅ I can view other buyers’ ratings and reviews before
+                  purchasing.
+                </li>
+              </ul>
+            </li>
+            <br />
+            <li>
+              <i class="bx bx-map"></i>
+              <strong>As a buyer,</strong> I want to search for producers based
+              on their location, so I can support local businesses and minimize
+              my carbon footprint.
+              <ul class="services__sublist">
+                <li>
+                  ✅ I can search for producers within a certain radius from my
+                  location.
+                </li>
+                <li>
+                  ✅ I can view a map showing nearby producers and their product
+                  availability.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <br />
+          <hr />
+          <br />
+          <div class="services__data" style="text-align: left !important">
+            <h3
+              class="services__subtitle"
+              style="text-align: center !important"
+            >
+              Use Cases for Local Producers
+            </h3>
+
+            <div class="use-case">
+              <h4>
+                <i class="bx bx-leaf"></i> Create and Manage Product Listings
+              </h4>
+              <p><strong>Primary Actor:</strong> Local Producer</p>
+              <p>
+                <strong>Description:</strong> The local producer wants to list
+                their products on the app, so buyers can view and purchase them.
+              </p>
+              <ul class="services__sublist">
+                <li>
+                  ✅ Preconditions: The producer must be registered and logged
+                  in.
+                </li>
+                <li>✅ Main Flow:</li>
+                <ul class="lista-bullet">
+                  <li>The producer logs into the app.</li>
+                  <li>
+                    The producer navigates to the "Create Product" section.
+                  </li>
+                  <li>
+                    The producer uploads product information (name, description,
+                    price, stock, and photos).
+                  </li>
+                  <li>The producer saves the listing.</li>
+                  <li>The product is made visible to buyers.</li>
+                </ul>
+                <li>
+                  ✅ Postconditions: The product is listed on the platform, and
+                  buyers can view it and place orders.
+                </li>
+                <li>
+                  🚨 Alternative Flow: If the producer uploads incomplete or
+                  incorrect information, the system displays an error message
+                  and prompts the producer to correct the details.
+                </li>
+              </ul>
+            </div>
+
+            <div class="use-case">
+              <h4><i class="bx bx-package"></i> Track and Update Inventory</h4>
+              <p><strong>Primary Actor:</strong> Local Producer</p>
+              <p>
+                <strong>Description:</strong> The producer needs to keep their
+                inventory updated to avoid selling out-of-stock products.
+              </p>
+              <ul class="services__sublist">
+                <li>
+                  ✅ Preconditions: The producer is logged in and has products
+                  listed.
+                </li>
+                <li>✅ Main Flow:</li>
+                <ul class="lista-bullet">
+                  <li>The producer logs into the app.</li>
+                  <li>The producer navigates to their product listings.</li>
+                  <li>
+                    The producer updates the stock count for individual
+                    products.
+                  </li>
+                  <li>
+                    If a product runs out of stock, the producer marks it as
+                    "Out of Stock."
+                  </li>
+                  <li>The system updates the inventory in real-time.</li>
+                </ul>
+                <li>
+                  ✅ Postconditions: The inventory count is accurate, and the
+                  system prevents buyers from ordering out-of-stock products.
+                </li>
+                <li>
+                  🚨 Alternative Flow: If the producer enters an invalid stock
+                  quantity, the system prompts the producer to correct it.
+                </li>
+              </ul>
+            </div>
+
+            <div class="use-case">
+              <h4><i class="bx bx-bell"></i> Receive and Manage Orders</h4>
+              <p><strong>Primary Actor:</strong> Local Producer</p>
+              <p>
+                <strong>Description:</strong> The producer receives orders from
+                buyers and manages their fulfillment.
+              </p>
+              <ul class="services__sublist">
+                <li>
+                  ✅ Preconditions: A buyer has placed an order for the
+                  producer’s products.
+                </li>
+                <li>✅ Main Flow:</li>
+                <ul class="lista-bullet">
+                  <li>
+                    The producer receives a notification about a new order.
+                  </li>
+                  <li>
+                    The producer reviews the order details (products,
+                    quantities, buyer’s information).
+                  </li>
+                  <li>
+                    The producer prepares the products for delivery or pick-up.
+                  </li>
+                  <li>
+                    The producer ships the order or arranges for local pick-up.
+                  </li>
+                  <li>
+                    The producer marks the order as "Shipped" or "Completed."
+                  </li>
+                  <li>
+                    The buyer receives a notification about the status of their
+                    order.
+                  </li>
+                </ul>
+                <li>
+                  ✅ Postconditions: The order is processed, and the buyer
+                  receives their products.
+                </li>
+                <li>
+                  🚨 Alternative Flow: If the product is unavailable or damaged,
+                  the producer notifies the buyer and arranges a refund or
+                  exchange.
+                </li>
+              </ul>
+            </div>
+
+            <br />
+
+            <h3
+              class="services__subtitle"
+              style="text-align: center !important"
+            >
+              Use Cases for Buyers
+            </h3>
+
+            <div class="use-case">
+              <h4>
+                <i class="bx bx-search-alt"></i> Search and Filter Products
+              </h4>
+              <p><strong>Primary Actor:</strong> Buyer</p>
+              <p>
+                <strong>Description:</strong> The buyer wants to search and
+                filter products based on categories, price, or location.
+              </p>
+              <ul class="services__sublist">
+                <li>✅ Preconditions: The buyer is logged into the app.</li>
+                <li>✅ Main Flow:</li>
+                <ul class="lista-bullet">
+                  <li>
+                    The buyer opens the app and navigates to the search section.
+                  </li>
+                  <li>
+                    The buyer enters a keyword (e.g., "apples," "cheese").
+                  </li>
+                  <li>
+                    The buyer filters the results based on categories (e.g.,
+                    fruits, vegetables), price range, or proximity to their
+                    location.
+                  </li>
+                  <li>The buyer browses the filtered products.</li>
+                </ul>
+                <li>
+                  ✅ Postconditions: The buyer finds products matching their
+                  criteria.
+                </li>
+                <li>
+                  🚨 Alternative Flow: If no products match the search criteria,
+                  the app displays a message prompting the buyer to try
+                  different filters.
+                </li>
+              </ul>
+            </div>
+
+            <div class="use-case">
+              <h4><i class="bx bx-credit-card"></i> Place an Order</h4>
+              <p><strong>Primary Actor:</strong> Buyer</p>
+              <p>
+                <strong>Description:</strong> The buyer places an order for the
+                products they want to purchase.
+              </p>
+              <ul class="services__sublist">
+                <li>
+                  ✅ Preconditions: The buyer has selected products and added
+                  them to their cart.
+                </li>
+                <li>✅ Main Flow:</li>
+                <ul class="lista-bullet">
+                  <li>
+                    The buyer reviews their cart and makes any necessary
+                    adjustments.
+                  </li>
+                  <li>
+                    The buyer selects a payment method and enters payment
+                    details.
+                  </li>
+                  <li>
+                    The buyer enters their shipping address and selects delivery
+                    or pick-up options.
+                  </li>
+                  <li>The buyer confirms and places the order.</li>
+                  <li>
+                    The buyer receives an order confirmation and an estimated
+                    delivery time.
+                  </li>
+                </ul>
+                <li>
+                  ✅ Postconditions: The order is placed, and the buyer is
+                  charged accordingly.
+                </li>
+                <li>
+                  🚨 Alternative Flow: If payment fails, the buyer is prompted
+                  to correct payment information.
+                </li>
+              </ul>
+            </div>
+
+            <div class="use-case">
+              <h4><i class="bx bx-star"></i> Leave a Review</h4>
+              <p><strong>Primary Actor:</strong> Buyer</p>
+              <p>
+                <strong>Description:</strong> The buyer leaves feedback on the
+                product they purchased.
+              </p>
+              <ul class="services__sublist">
+                <li>
+                  ✅ Preconditions: The buyer has received their order and is
+                  satisfied or dissatisfied.
+                </li>
+                <li>✅ Main Flow:</li>
+                <ul class="lista-bullet">
+                  <li>The buyer navigates to "My Orders."</li>
+                  <li>The buyer selects the product they want to review.</li>
+                  <li>
+                    The buyer rates the product on a scale (e.g., 1-5 stars) and
+                    leaves comments.
+                  </li>
+                  <li>The buyer submits the review.</li>
+                </ul>
+                <li>
+                  ✅ Postconditions: The review is visible on the product page
+                  for other buyers.
+                </li>
+                <li>
+                  🚨 Alternative Flow: If the review is inappropriate (e.g.,
+                  contains offensive language), the system prompts the buyer to
+                  revise it.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+
+          <p class="services__description">
+            We have updated and uploaded the wireframe, incorporating the
+            current user stories and reflecting the feedback received during our
+            face-to-face interviews with potential users. The insights gathered
+            helped us refine the app's design and functionality to better align
+            with the needs of our target audience. These updates include
+            streamlined user flows, improved navigation, and additional features
+            that address the challenges identified by both local producers and
+            buyers. The updated wireframe is now available for review,
+            showcasing the changes made based on user feedback to enhance
+            usability and overall experience.
+          </p>
+
+          <br />
+
+          <div>
+            <a
+              href="https://www.figma.com/design/dTnkHzBQaFEG2VIT4gUAc6/IAS?node-id=17-151&node-type=frame"
+              target="_blank"
+              class="button_leaf"
+              style="
+                background-color: #28a745;
+                color: white;
+                padding: 12px 24px;
+                text-decoration: none;
+                border-radius: 50px 25px 50px 25px;
+                transform: rotate(-5deg);
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s, transform 0.3s;
+              "
+              onmouseover="this.style.backgroundColor='#218838'; this.style.transform='rotate(-3deg) scale(1.05)';"
+              onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='rotate(-5deg) scale(1)';"
+            >
+              Check Wireframe
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Agro</a>
+          <p class="footer__description">
+            Connecting Farmers to Urban Tables <br />
+            Fresh, Local, Direct.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Pricing </a></li>
+            <li><a href="#" class="footer__link">Discounts</a></li>
+            <li><a href="#" class="footer__link">Report a bug</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Our mision</a></li>
+            <li><a href="#" class="footer__link">Get in touch</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Community</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Support</a></li>
+            <li><a href="#" class="footer__link">Questions</a></li>
+            <li><a href="#" class="footer__link">Customer help</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; Agro. All right reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
