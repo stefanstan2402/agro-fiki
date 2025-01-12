@@ -685,3 +685,34 @@ body.dark-theme {
   list-style-type: disc;
   margin-left: 20px;
 }
+
+/* Styling the link */
+.hover-link {
+  position: relative;
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+/* Styling the hover text (tooltip) */
+.hover-link::after {
+  content: "More info about this link!";
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+/* Show the hover text when hovering */
+.hover-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
